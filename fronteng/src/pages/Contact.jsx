@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { BsTruck, BsChatText } from "react-icons/bs";
-import payment from "../assets/conpay.png";
+import payment from "../assets/conPay.png";
 import contactBox from "../assets/contactbox.png";
 import contactreturn from "../assets/contactreturn.png";
 // axios import left in case you re-enable the form
