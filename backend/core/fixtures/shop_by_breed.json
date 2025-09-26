@@ -1,0 +1,52 @@
+[
+  {
+    "model": "core.megamenu",
+    "pk": 5,
+    "fields": {
+      "key": "shop-by-breed",
+      "title": "Shop by Breed",
+      "title_url": "/shop-by-breed/",
+      "order": 5,
+      "left_image": "mega_menu_images/dog_breed_left.jpg",
+      "right_image": "mega_menu_images/cat_breed_right.jpg"
+    }
+  },
+
+  {
+    "model": "core.megamenusection",
+    "pk": 30,
+    "fields": {
+      "mega_menu": 5,
+      "title": "Popular Dog Breeds",
+      "path": "/shop-by-breed/dogs",
+      "order": 1
+    }
+  },
+
+  { "model": "core.megamenucategory", "pk": 401, "fields": { "section": 30, "name": "Beagle", "order": 1 } },
+  { "model": "core.megamenucategory", "pk": 402, "fields": { "section": 30, "name": "Dachshund", "order": 2 } },
+  { "model": "core.megamenucategory", "pk": 403, "fields": { "section": 30, "name": "Shih Tzu", "order": 3 } },
+  { "model": "core.megamenucategory", "pk": 404, "fields": { "section": 30, "name": "Pug", "order": 4 } },
+  { "model": "core.megamenucategory", "pk": 405, "fields": { "section": 30, "name": "Cocker Spaniel", "order": 5 } },
+  { "model": "core.megamenucategory", "pk": 406, "fields": { "section": 30, "name": "Boxer", "order": 6 } },
+  { "model": "core.megamenucategory", "pk": 407, "fields": { "section": 30, "name": "German Shepherd", "order": 7 } },
+  { "model": "core.megamenucategory", "pk": 408, "fields": { "section": 30, "name": "Golden Retriever", "order": 8 } },
+  { "model": "core.megamenucategory", "pk": 409, "fields": { "section": 30, "name": "Labrador Retriever", "order": 9 } },
+  { "model": "core.megamenucategory", "pk": 410, "fields": { "section": 30, "name": "Great Dane", "order": 10 } },
+
+  {
+    "model": "core.megamenusection",
+    "pk": 31,
+    "fields": {
+      "mega_menu": 5,
+      "title": "Popular Cat Breeds",
+      "path": "/shop-by-breed/cats",
+      "order": 2
+    }
+  },
+
+  { "model": "core.megamenucategory", "pk": 411, "fields": { "section": 31, "name": "Persian Cat", "order": 1 } },
+  { "model": "core.megamenucategory", "pk": 412, "fields": { "section": 31, "name": "Himalayan Cat", "order": 2 } },
+  { "model": "core.megamenucategory", "pk": 413, "fields": { "section": 31, "name": "Bengal Cat", "order": 3 } },
+  { "model": "core.megamenucategory", "pk": 414, "fields": { "section": 31, "name": "Siamese Cat", "order": 4 } }
+]

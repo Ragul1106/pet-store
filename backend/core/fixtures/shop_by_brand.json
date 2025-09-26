@@ -1,0 +1,71 @@
+[
+  {
+    "model": "core.megamenu",
+    "pk": 6,
+    "fields": {
+      "key": "shop-by-brand",
+      "title": "Shop by Brand",
+      "title_url": "/shop-by-brand/",
+      "order": 6,
+      "left_image": "",
+      "right_image": ""
+    }
+  },
+
+  {
+    "model": "core.megamenusection",
+    "pk": 40,
+    "fields": { "mega_menu": 6, "title": "Brands", "path": "/brands", "order": 1 }
+  },
+
+  {
+    "model": "core.megamenubrand",
+    "pk": 500,
+    "fields": { "mega_menu": 6, "name": "Pedigree", "image": "mega_menu_brands/pedigree.jpg", "order": 1 }
+  },
+  {
+    "model": "core.megamenubrand",
+    "pk": 501,
+    "fields": { "mega_menu": 6, "name": "Royal Canin", "image": "mega_menu_brands/royal_canin.jpg", "order": 2 }
+  },
+  {
+    "model": "core.megamenubrand",
+    "pk": 502,
+    "fields": { "mega_menu": 6, "name": "Whiskas", "image": "mega_menu_brands/whiskas.jpg", "order": 3 }
+  },
+  {
+    "model": "core.megamenubrand",
+    "pk": 503,
+    "fields": { "mega_menu": 6, "name": "Bruno's Wild", "image": "mega_menu_brands/brunos_wild.jpg", "order": 4 }
+  },
+  {
+    "model": "core.megamenubrand",
+    "pk": 504,
+    "fields": { "mega_menu": 6, "name": "Sheba", "image": "mega_menu_brands/sheba.jpg", "order": 5 }
+  },
+  {
+    "model": "core.megamenubrand",
+    "pk": 505,
+    "fields": { "mega_menu": 6, "name": "Lozalo", "image": "mega_menu_brands/lozalo.jpg", "order": 6 }
+  },
+  {
+    "model": "core.megamenubrand",
+    "pk": 506,
+    "fields": { "mega_menu": 6, "name": "Me-O", "image": "mega_menu_brands/meo.jpg", "order": 7 }
+  },
+  {
+    "model": "core.megamenubrand",
+    "pk": 507,
+    "fields": { "mega_menu": 6, "name": "Orijen", "image": "mega_menu_brands/orijen.jpg", "order": 8 }
+  },
+  {
+    "model": "core.megamenubrand",
+    "pk": 508,
+    "fields": { "mega_menu": 6, "name": "Top Tail", "image": "mega_menu_brands/toptail.jpg", "order": 9 }
+  },
+  {
+    "model": "core.megamenubrand",
+    "pk": 509,
+    "fields": { "mega_menu": 6, "name": "Drools", "image": "mega_menu_brands/drools.jpg", "order": 10 }
+  }
+]

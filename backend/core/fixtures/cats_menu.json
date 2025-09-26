@@ -1,0 +1,44 @@
+[
+  {
+    "model": "core.megamenu",
+    "pk": 2,
+    "fields": {
+      "key": "cat",
+      "title": "Cat",
+      "title_url": "/cats/",
+      "order": 2
+    }
+  },
+
+  { "model": "core.megamenusection", "pk": 6, "fields": { "mega_menu": 2, "title": "Dry & wet food", "path": "/cats/food", "order": 1 } },
+  { "model": "core.megamenusection", "pk": 7, "fields": { "mega_menu": 2, "title": "Creamy & natural treats", "path": "/cats/treats", "order": 2 } },
+  { "model": "core.megamenusection", "pk": 8, "fields": { "mega_menu": 2, "title": "Cat toys", "path": "/cats/toys", "order": 3 } },
+  { "model": "core.megamenusection", "pk": 9, "fields": { "mega_menu": 2, "title": "Grooming", "path": "/cats/grooming", "order": 4 } },
+  { "model": "core.megamenusection", "pk": 10, "fields": { "mega_menu": 2, "title": "Cleaning & odor control", "path": "/cats/cleaning", "order": 5 } },
+
+  { "model": "core.megamenucategory", "pk": 43, "fields": { "section": 6, "name": "Kitten Food", "order": 1 } },
+  { "model": "core.megamenucategory", "pk": 44, "fields": { "section": 6, "name": "Canned Cat Food", "order": 2 } },
+  { "model": "core.megamenucategory", "pk": 45, "fields": { "section": 6, "name": "Dry Cat Food", "order": 3 } },
+  { "model": "core.megamenucategory", "pk": 46, "fields": { "section": 6, "name": "Gravy Cat Food", "order": 4 } },
+  { "model": "core.megamenucategory", "pk": 47, "fields": { "section": 6, "name": "Prescription Cat Food", "order": 5 } },
+  { "model": "core.megamenucategory", "pk": 48, "fields": { "section": 6, "name": "Grain Free Cat Food", "order": 6 } },
+
+  { "model": "core.megamenucategory", "pk": 49, "fields": { "section": 7, "name": "Creamy Cat Treats", "order": 1 } },
+  { "model": "core.megamenucategory", "pk": 50, "fields": { "section": 7, "name": "Natural Cat Treats", "order": 2 } },
+
+  { "model": "core.megamenucategory", "pk": 51, "fields": { "section": 8, "name": "Cat Interactive Toys", "order": 1 } },
+  { "model": "core.megamenucategory", "pk": 52, "fields": { "section": 8, "name": "Toys", "order": 2 } },
+  { "model": "core.megamenucategory", "pk": 53, "fields": { "section": 8, "name": "Catnip", "order": 3 } },
+  { "model": "core.megamenucategory", "pk": 54, "fields": { "section": 8, "name": "Plush Toy", "order": 4 } },
+
+  { "model": "core.megamenucategory", "pk": 55, "fields": { "section": 9, "name": "Brushes And Combs", "order": 1 } },
+  { "model": "core.megamenucategory", "pk": 56, "fields": { "section": 9, "name": "Cat Shampoos And Conditioners", "order": 2 } },
+  { "model": "core.megamenucategory", "pk": 57, "fields": { "section": 9, "name": "Paw And Nail Care", "order": 3 } },
+  { "model": "core.megamenucategory", "pk": 58, "fields": { "section": 9, "name": "Trimmers And Tools", "order": 4 } },
+  { "model": "core.megamenucategory", "pk": 59, "fields": { "section": 9, "name": "Waterless Care", "order": 5 } },
+  { "model": "core.megamenucategory", "pk": 60, "fields": { "section": 9, "name": "Bathing Supplies", "order": 6 } },
+
+  { "model": "core.megamenucategory", "pk": 61, "fields": { "section": 10, "name": "Wipes And Stain Removers", "order": 1 } },
+  { "model": "core.megamenucategory", "pk": 62, "fields": { "section": 10, "name": "Diapers And Lint Rollers", "order": 2 } },
+  { "model": "core.megamenucategory", "pk": 63, "fields": { "section": 10, "name": "Cat Deodorizers", "order": 3 } }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "model": "core.megamenu",
+    "pk": 4,
+    "fields": {
+      "key": "pet-service",
+      "title": "Pet Service",
+      "title_url": "/pet-service",
+      "order": 4
+    }
+  },
+
+  {
+    "model": "core.megamenusection",
+    "pk": 20,
+    "fields": {
+      "mega_menu": 4,
+      "title": "Pet Services",
+      "path": "/pet-service/services",
+      "order": 1
+    }
+  },
+  {
+    "model": "core.megamenucategory",
+    "pk": 201,
+    "fields": { "section": 20, "name": "Grooming Salon", "order": 1 }
+  },
+  {
+    "model": "core.megamenucategory",
+    "pk": 202,
+    "fields": { "section": 20, "name": "Training Classes", "order": 2 }
+  },
+  {
+    "model": "core.megamenucategory",
+    "pk": 203,
+    "fields": { "section": 20, "name": "Pet Hostel Boarding", "order": 3 }
+  },
+  {
+    "model": "core.megamenucategory",
+    "pk": 204,
+    "fields": { "section": 20, "name": "Doggie Day Camp", "order": 4 }
+  },
+  {
+    "model": "core.megamenucategory",
+    "pk": 205,
+    "fields": { "section": 20, "name": "Veterinary Care", "order": 5 }
+  },
+
+  {
+    "model": "core.megamenusection",
+    "pk": 21,
+    "fields": {
+      "mega_menu": 4,
+      "title": "Adoption",
+      "path": "/pet-service/adoption",
+      "order": 2
+    }
+  },
+  {
+    "model": "core.megamenucategory",
+    "pk": 206,
+    "fields": { "section": 21, "name": "Pet Adoption", "order": 1 }
+  },
+  {
+    "model": "core.megamenucategory",
+    "pk": 207,
+    "fields": { "section": 21, "name": "Petpalooza Charities", "order": 2 }
+  }
+]

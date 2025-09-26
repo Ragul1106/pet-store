@@ -1,0 +1,65 @@
+[
+  {
+    "model": "core.megamenu",
+    "pk": 1,
+    "fields": {
+      "key": "dog",
+      "title": "Dog",
+      "title_url": "/dogs/",
+      "order": 1
+    }
+  },
+
+  { "model": "core.megamenusection", "pk": 1, "fields": { "mega_menu": 1, "title": "Dry & wet food", "path": "/dogs/food", "order": 1 } },
+  { "model": "core.megamenusection", "pk": 2, "fields": { "mega_menu": 1, "title": "Clothing", "path": "/dogs/clothing", "order": 2 } },
+  { "model": "core.megamenusection", "pk": 3, "fields": { "mega_menu": 1, "title": "Dog toys", "path": "/dogs/toys", "order": 3 } },
+  { "model": "core.megamenusection", "pk": 4, "fields": { "mega_menu": 1, "title": "Health care", "path": "/dogs/health", "order": 4 } },
+  { "model": "core.megamenusection", "pk": 5, "fields": { "mega_menu": 1, "title": "Dog beds & mats", "path": "/dogs/beds", "order": 5 } },
+
+  { "model": "core.megamenucategory", "pk": 1, "fields": { "section": 1, "name": "Dry Dog Food", "order": 1 } },
+  { "model": "core.megamenucategory", "pk": 2, "fields": { "section": 1, "name": "Wet Dog Food", "order": 2 } },
+  { "model": "core.megamenucategory", "pk": 3, "fields": { "section": 1, "name": "Veg Dog Food", "order": 3 } },
+  { "model": "core.megamenucategory", "pk": 4, "fields": { "section": 1, "name": "Grain Free Dog Food", "order": 4 } },
+  { "model": "core.megamenucategory", "pk": 5, "fields": { "section": 1, "name": "Human Grade Food", "order": 5 } },
+  { "model": "core.megamenucategory", "pk": 6, "fields": { "section": 1, "name": "Low Grain Dog Food", "order": 6 } },
+  { "model": "core.megamenucategory", "pk": 7, "fields": { "section": 1, "name": "Prescription Dog Food", "order": 7 } },
+  { "model": "core.megamenucategory", "pk": 8, "fields": { "section": 1, "name": "Puppy Food", "order": 8 } },
+
+  { "model": "core.megamenucategory", "pk": 9, "fields": { "section": 2, "name": "T-shirts", "order": 1 } },
+  { "model": "core.megamenucategory", "pk": 10, "fields": { "section": 2, "name": "Raincoat", "order": 2 } },
+  { "model": "core.megamenucategory", "pk": 11, "fields": { "section": 2, "name": "Sweaters", "order": 3 } },
+  { "model": "core.megamenucategory", "pk": 12, "fields": { "section": 2, "name": "Special Occasion Wear", "order": 4 } },
+  { "model": "core.megamenucategory", "pk": 13, "fields": { "section": 2, "name": "Hoodies & Sweatshirts", "order": 5 } },
+  { "model": "core.megamenucategory", "pk": 14, "fields": { "section": 2, "name": "Jackets", "order": 6 } },
+  { "model": "core.megamenucategory", "pk": 15, "fields": { "section": 2, "name": "Socks", "order": 7 } },
+  { "model": "core.megamenucategory", "pk": 16, "fields": { "section": 2, "name": "Dresses", "order": 8 } },
+  { "model": "core.megamenucategory", "pk": 17, "fields": { "section": 2, "name": "Shoes", "order": 9 } },
+  { "model": "core.megamenucategory", "pk": 18, "fields": { "section": 2, "name": "Bandana", "order": 10 } },
+
+  { "model": "core.megamenucategory", "pk": 19, "fields": { "section": 3, "name": "Rope Toys", "order": 1 } },
+  { "model": "core.megamenucategory", "pk": 20, "fields": { "section": 3, "name": "Tough Chew Toys", "order": 2 } },
+  { "model": "core.megamenucategory", "pk": 21, "fields": { "section": 3, "name": "Chew Toys", "order": 3 } },
+  { "model": "core.megamenucategory", "pk": 22, "fields": { "section": 3, "name": "Plush Toys", "order": 4 } },
+  { "model": "core.megamenucategory", "pk": 23, "fields": { "section": 3, "name": "Interactive Toys", "order": 5 } },
+  { "model": "core.megamenucategory", "pk": 24, "fields": { "section": 3, "name": "Squeaky Toys", "order": 6 } },
+  { "model": "core.megamenucategory", "pk": 25, "fields": { "section": 3, "name": "Ball Toys", "order": 7 } },
+  { "model": "core.megamenucategory", "pk": 26, "fields": { "section": 3, "name": "Fetch Toys", "order": 8 } },
+
+  { "model": "core.megamenucategory", "pk": 27, "fields": { "section": 4, "name": "Skin Care", "order": 1 } },
+  { "model": "core.megamenucategory", "pk": 28, "fields": { "section": 4, "name": "Eye Care", "order": 2 } },
+  { "model": "core.megamenucategory", "pk": 29, "fields": { "section": 4, "name": "Digestion And Immunity", "order": 3 } },
+  { "model": "core.megamenucategory", "pk": 30, "fields": { "section": 4, "name": "Hip And Joint Care", "order": 4 } },
+  { "model": "core.megamenucategory", "pk": 31, "fields": { "section": 4, "name": "Dental Care", "order": 5 } },
+  { "model": "core.megamenucategory", "pk": 32, "fields": { "section": 4, "name": "Calcium Supplements", "order": 6 } },
+  { "model": "core.megamenucategory", "pk": 33, "fields": { "section": 4, "name": "Ear Care", "order": 7 } },
+  { "model": "core.megamenucategory", "pk": 34, "fields": { "section": 4, "name": "Deworming", "order": 8 } },
+  { "model": "core.megamenucategory", "pk": 35, "fields": { "section": 4, "name": "Tick And Flea Solutions", "order": 9 } },
+  { "model": "core.megamenucategory", "pk": 36, "fields": { "section": 4, "name": "Antibiotics", "order": 10 } },
+
+  { "model": "core.megamenucategory", "pk": 37, "fields": { "section": 5, "name": "Dog Beds", "order": 1 } },
+  { "model": "core.megamenucategory", "pk": 38, "fields": { "section": 5, "name": "Dog Cushions", "order": 2 } },
+  { "model": "core.megamenucategory", "pk": 39, "fields": { "section": 5, "name": "Dog Blankets", "order": 3 } },
+  { "model": "core.megamenucategory", "pk": 40, "fields": { "section": 5, "name": "Dog Mats", "order": 4 } },
+  { "model": "core.megamenucategory", "pk": 41, "fields": { "section": 5, "name": "Wooden Furniture", "order": 5 } },
+  { "model": "core.megamenucategory", "pk": 42, "fields": { "section": 5, "name": "Dog Tents", "order": 6 } }
+]

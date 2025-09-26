@@ -1,0 +1,29 @@
+[
+  {
+    "model": "core.megamenu",
+    "pk": 3,
+    "fields": {
+      "key": "small-pets",
+      "title": "Small Pets",
+      "title_url": "/small-pets/",
+      "order": 3
+    }
+  },
+
+  {
+    "model": "core.megamenusection",
+    "pk": 11,
+    "fields": {
+      "mega_menu": 3,
+      "title": "Small Pets",
+      "path": "/small-pets/",
+      "order": 1
+    }
+  },
+
+  { "model": "core.megamenucategory", "pk": 64, "fields": { "section": 11, "name": "Hamsters", "order": 1 } },
+  { "model": "core.megamenucategory", "pk": 65, "fields": { "section": 11, "name": "Guinea pigs", "order": 2 } },
+  { "model": "core.megamenucategory", "pk": 66, "fields": { "section": 11, "name": "Rabbits", "order": 3 } },
+  { "model": "core.megamenucategory", "pk": 67, "fields": { "section": 11, "name": "Rats", "order": 4 } },
+  { "model": "core.megamenucategory", "pk": 68, "fields": { "section": 11, "name": "Fish", "order": 5 } }
+]
