@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'pets',
     'orders',
     "contact",
-    'rest_framework.authtoken',
     'core',
     'home',
     'about',
