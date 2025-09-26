@@ -10,7 +10,7 @@ import PhoneIcon from "../assets/phone.png";
 import MailIcon from "../assets/mail.png";
 import UserIcon from "../assets/user.png";
 import CartIcon from "../assets/cart.png";
-import SecondaryNav from "./SecondaryNav";
+import SecondaryNav from "./secondaryNav";
 
 export default function Navbar() {
   const [settings, setSettings] = useState(null);
