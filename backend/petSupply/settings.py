@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'orders',
     "contact",
     'rest_framework.authtoken',
-    "rest_framework_simplejwt",
     'core',
     'home',
     'about',
@@ -126,7 +125,8 @@ USE_TZ = True
 
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  
+    "http://localhost:5173",
+    "https://pet-store-fawn.vercel.app"  
     
 ]
 
