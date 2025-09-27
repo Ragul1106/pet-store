@@ -4,6 +4,10 @@ import { Link, useNavigate } from "react-router-dom";
 import { fetchCart, updateItem, deleteItem } from "../lib/cartApi";
 import sampleImg from "../assets/productdesimg.png";
 
+import { MdOutlinePhone } from "react-icons/md";
+import { IoLockClosedOutline } from "react-icons/io5";
+import { LuEyeOff } from "react-icons/lu";
+
 import GPayImg from "../assets/gpay.png";
 import PhonePeImg from "../assets/phonepe.png";
 import MastercardImg from "../assets/mastercard.png";
@@ -63,9 +67,9 @@ export default function CartPage() {
   };
 
   const onProceed = () => {
-  // navigate to checkout and let Checkout fetch cart
-  navigate("/checkout", { state: { buyNow: false } });
-};
+    // navigate to checkout and let Checkout fetch cart
+    navigate("/checkout", { state: { buyNow: false } });
+  };
 
   if (loading) return <div className="p-6">Loading…</div>;
 
@@ -118,17 +122,17 @@ export default function CartPage() {
                     key={it.id}
                     className="flex flex-col md:flex-row items-center gap-4 border-b pb-4"
                   >
-                    {/* remove */}
+                    
                     <div className="w-10 text-center">
                       <button
                         onClick={() => onRemove(it)}
-                        className="text-red-500"
+                        className="text-red-500 cursor-pointer"
                       >
                         X
                       </button>
                     </div>
 
-                    {/* product image + title */}
+                    
                     <div className="flex items-center gap-4 md:col-span-2 flex-1">
                       <img
                         src={it.product.image || sampleImg}
@@ -152,21 +156,21 @@ export default function CartPage() {
                     <div className="w-36 flex items-center gap-2">
                       <button
                         onClick={() => onQtyChange(it, -1)}
-                        className="h-8 w-8 rounded border"
+                        className="h-8 w-8 rounded cursor-pointer border"
                       >
                         −
                       </button>
                       <div className="text-center w-10">{it.quantity}</div>
                       <button
                         onClick={() => onQtyChange(it, +1)}
-                        className="h-8 w-8 rounded border"
+                        className="h-8 w-8 cursor-pointer rounded border"
                       >
                         +
                       </button>
                     </div>
 
                     {/* subtotal */}
-                    <div className="w-36 text-sm text-right">
+                    <div className="w-36 text-sm text-center">
                       ₹{" "}
                       {(
                         it.quantity * Number(it.price_snapshot)
@@ -197,39 +201,56 @@ export default function CartPage() {
 
           {/* green offers row */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="bg-green-100 p-6 text-center rounded">
+            <div className="bg-[#98FB98] font-bold p-6 text-center rounded">
               Free products dog food combo 5 kg, turkey
             </div>
-            <div className="bg-green-100 p-6 text-center rounded">
+            <div className="bg-[#98FB98] font-bold p-6 text-center rounded">
               Free products dog food 2 kg turkey
             </div>
-            <div className="bg-green-100 p-6 text-center rounded">
+            <div className="bg-[#98FB98] font-bold p-6 text-center rounded">
               Free products dog food 2 kg chicken
             </div>
           </div>
 
           {/* help cards row */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-gray-700">
+            {/* Card 1 */}
             <div className="p-4">
-              <div className="font-semibold">Have a question?</div>
-              <div className="text-xs">
-                Our experts are here to call:{" "}
-                <a className="text-blue-600">call us</a>
+              <div className="flex items-center">
+                <MdOutlinePhone className="shrink-0 text-gray-700 mr-3 bg-blue-400 rounded-full " size={24} />
+                <div>
+                  <div className="font-semibold">Have a question?</div>
+                  <div className="text-xs">
+                    Our experts are here to call:{" "}
+                    <a className="text-blue-600">call us</a>
+                  </div>
+                </div>
               </div>
             </div>
+
+            {/* Card 2 */}
             <div className="p-4">
-              <div className="font-semibold">Secure shopping</div>
-              <div className="text-xs">
-                All transactions are protected by SSL
+              <div className="flex items-center">
+                <IoLockClosedOutline className="shrink-0 text-gray-700 mr-3 bg-blue-400 rounded-full " size={24} />
+                <div>
+                  <div className="font-semibold">Secure shopping</div>
+                  <div className="text-xs">All transactions are protected by SSL</div>
+                </div>
               </div>
             </div>
+
+            {/* Card 3 */}
             <div className="p-4">
-              <div className="font-semibold">Privacy protection</div>
-              <div className="text-xs">
-                Your privacy is always our top priority.
+              <div className="flex items-center">
+                <LuEyeOff className="shrink-0 text-gray-700 mr-3 bg-blue-400 rounded-full " size={24} />
+                <div>
+                  <div className="font-semibold">Privacy protection</div>
+                  <div className="text-xs">Your privacy is always our top priority.</div>
+                </div>
               </div>
             </div>
           </div>
+
         </div>
 
         {/* right: totals */}
@@ -312,14 +333,6 @@ export default function CartPage() {
               </div>
             </div>
           </div>
-
-          
-          {/* <div className="rounded border bg-white p-4 text-sm">
-            <div className="font-semibold">Have a coupon?</div>
-            <div className="text-xs text-gray-500">
-              Add coupon on the left to see discount.
-            </div>
-          </div> */}
         </aside>
       </div>
     </div>

@@ -48,8 +48,8 @@ export default function Footer() {
         <div>
           <h3 className="font-bold mb-3">Categories</h3>
           <ul className="space-y-1 text-sm">
-            <li><Link to="/categories/dog">Dog</Link></li>
-            <li><Link to="/categories/cat">Cat</Link></li>
+            <li><Link to="/pets/dog">Dog</Link></li>
+            <li><Link to="/pets/cat">Cat</Link></li>
             <li><Link to="/categories/fish">Fish</Link></li>
             <li><Link to="/categories/rats">Rats</Link></li>
             <li><Link to="/categories/rabbits">Rabbits</Link></li>
@@ -74,10 +74,10 @@ export default function Footer() {
           <div className="flex items-center gap-3 mb-6">
             <h3 className="font-bold">Follow:</h3>
             <div className="flex gap-3">
-              <Link to="#"><img src={FacebookIcon} alt="Facebook" className="w-6 h-6" /></Link>
-              <Link to="#"><img src={InstagramIcon} alt="Instagram" className="w-6 h-6" /></Link>
-              <Link to="#"><img src={YoutubeIcon} alt="YouTube" className="w-6 h-6" /></Link>
-              <Link to="#"><img src={WhatsappIcon} alt="WhatsApp" className="w-6 h-6" /></Link>
+              <Link to="https://www.facebook.com"><img src={FacebookIcon} alt="Facebook" className="w-6 h-6" /></Link>
+              <Link to="https://www.instagram.com"><img src={InstagramIcon} alt="Instagram" className="w-6 h-6" /></Link>
+              <Link to="https://www.youtube.com"><img src={YoutubeIcon} alt="YouTube" className="w-6 h-6" /></Link>
+              <Link to="https://www.whatsapp.com"><img src={WhatsappIcon} alt="WhatsApp" className="w-6 h-6" /></Link>
             </div>
           </div>
           <h3 className="font-bold mb-2">Get in Touch</h3>
