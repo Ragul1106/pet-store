@@ -2,11 +2,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { BsTruck, BsChatText } from "react-icons/bs";
+import { FaRegUserCircle } from "react-icons/fa";
+import { MdOutlineMail, MdOutlinePhone } from "react-icons/md";
 import payment from "../assets/conPay.png";
-import contactBox from "../assets/contactbox.png";
+// import contactBox from "../assets/contactbox.png";
 import contactreturn from "../assets/contactreturn.png";
 // axios import left in case you re-enable the form
-import axios from "axios";
+// import axios from "axios";
 
 export default function Contact() {
   // contact form state is kept commented for now
@@ -87,7 +89,7 @@ export default function Contact() {
       {/* Hero help box */}
       <div className="rounded-xl border p-6 mb-8 flex items-center justify-between bg-white shadow-sm">
         <div className="flex items-center gap-4">
-          <div className="h-12 w-12 rounded-full border flex items-center justify-center text-2xl">👤</div>
+          <div className="h-12 w-12  flex items-center justify-center text-2xl"><FaRegUserCircle  className="w-10 h-10"/></div>
           <div>
             <div className="font-medium">Getting help is easy</div>
             <div className="text-sm text-gray-500">Sign in to get help with recent orders</div>
@@ -95,7 +97,7 @@ export default function Contact() {
         </div>
 
         <div>
-          <Link to="/signin" className="rounded-md bg-blue-600 text-white px-4 py-2 font-semibold hover:bg-blue-700">Sign in</Link>
+          <Link to="/login" className="rounded-md bg-blue-600 text-white px-4 py-2 font-semibold hover:bg-blue-700">Sign in</Link>
         </div>
       </div>
 
@@ -157,7 +159,7 @@ export default function Contact() {
 
           <div className="space-y-4">
             <div className="flex items-start gap-4">
-              <div className="h-10 w-10 rounded-full border flex items-center justify-center">📞</div>
+              <div className="h-10 w-10  flex items-center justify-center"><MdOutlinePhone className="w-6 h-6" /></div>
               <div>
                 <div className="font-medium">Call to 1234567890</div>
                 {/* <div className="text-sm text-gray-500">Available 9am — 6pm</div> */}
@@ -165,7 +167,7 @@ export default function Contact() {
             </div>
 
             <div className="flex items-start gap-4">
-              <div className="h-10 w-10 rounded-full border flex items-center justify-center">✉️</div>
+              <div className="h-10 w-10  flex items-center justify-center"><MdOutlineMail className="w-6 h-6" /></div>
               <div>
                 <div className="font-medium">support@petpalooza.com</div>
                 {/* <div className="text-sm text-gray-500">We respond within 24 hours</div> */}
