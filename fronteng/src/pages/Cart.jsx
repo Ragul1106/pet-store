@@ -88,7 +88,7 @@ export default function CartPage() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* left: cart list */}
         <div className="lg:col-span-2 space-y-6">
-          <div className="rounded border bg-white p-4">
+          <div className=" bg-white p-4">
             {/* free shipping bar */}
             <div className="mb-4">
               <div className="text-xs text-green-700 mb-2">
@@ -234,16 +234,16 @@ export default function CartPage() {
 
         {/* right: totals */}
         <aside className="space-y-4">
-          <div className="rounded border bg-white p-6">
+          <div className=" bg-white p-6">
             <h3 className="text-xl font-semibold">Cart Totals</h3>
 
             <div className="mt-4 text-sm space-y-2">
-              <div className="flex justify-between">
+              <div className="flex  justify-between">
                 <div>Sub total</div>
                 <div>₹ {Number(subtotal).toLocaleString("en-IN")}</div>
               </div>
-              <div className="flex justify-between">
-                <div>Shipping</div>
+              <div className="flex border-t pt-5 mt-5 justify-between">
+                <div >Shipping</div>
                 <div>Flat rate : ₹{shipping.toFixed(2)}</div>
               </div>
 
@@ -255,7 +255,7 @@ export default function CartPage() {
               {/* ✅ Proceed to checkout */}
               <button
                 onClick={onProceed}
-                className="mt-4 w-full rounded-full bg-blue-600 px-5 py-3 text-white"
+                className="mt-4 w-full rounded-full cursor-pointer bg-blue-600 px-5 py-3 text-white"
               >
                 Proceed to Checkout
               </button>
@@ -299,8 +299,13 @@ export default function CartPage() {
               </div>
 
               <div className="mt-4 text-xs text-gray-500">
-                <div className="font-semibold">Delivery information:</div>
-                <div>
+                <div className="font-bold text-black">Delivery information:</div>
+                <div className="text-black">
+                  Although we don’t think you'll ever want one, we’ll gladly
+                  provide a refund if it’s requested within 14 days of purchase.
+                </div>
+                <div className="font-bold text-black mt-5">14 Days Money back Guarantee:</div>
+                <div className="text-black">
                   Although we don’t think you'll ever want one, we’ll gladly
                   provide a refund if it’s requested within 14 days of purchase.
                 </div>
@@ -308,13 +313,13 @@ export default function CartPage() {
             </div>
           </div>
 
-          {/* small note card */}
-          <div className="rounded border bg-white p-4 text-sm">
+          
+          {/* <div className="rounded border bg-white p-4 text-sm">
             <div className="font-semibold">Have a coupon?</div>
             <div className="text-xs text-gray-500">
               Add coupon on the left to see discount.
             </div>
-          </div>
+          </div> */}
         </aside>
       </div>
     </div>
