@@ -1,4 +1,4 @@
-// src/components/Navbar.jsx
+
 import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import api from "../lib/api";
@@ -14,7 +14,7 @@ import SecondaryNav from "./secondaryNav";
 
 export default function Navbar() {
   const [settings, setSettings] = useState(null);
-  const [open, setOpen] = useState(false); // mobile main menu
+  const [open, setOpen] = useState(false); 
   const [user, setUser] = useState(null);
   const [userMenu, setUserMenu] = useState(false);
   const [accessToken, setAccessToken] = useState(() => localStorage.getItem("access"));
@@ -314,7 +314,7 @@ export default function Navbar() {
                   <span>Cart</span>
 
                   {cartCount > 0 && (
-                    <span className="absolute -top-2 -right-3 bg-red-600 text-white text-xs rounded-full px-2 py-0.5">
+                    <span className="absolute -top-2 -right-3 bg-[#ffff02] text-black text-xs rounded-full px-2 py-0.5">
                       {cartCount}
                     </span>
                   )}

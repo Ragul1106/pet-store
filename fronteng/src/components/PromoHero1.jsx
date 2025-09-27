@@ -80,7 +80,7 @@ export default function PromoHero1({ apiEndpoint = "/carousal-banner1/" }) {
   };
 
   return (
-    <section className="w-full mx-auto my-8 px-4">
+    <section className="w-full h-full mx-auto my-8 px-4">
 
       <div className="flex flex-col md:flex-row items-stretch rounded-2xl overflow-hidden relative">
         {/* Left image (60%) */}
