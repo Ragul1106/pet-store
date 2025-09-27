@@ -126,7 +126,7 @@ USE_TZ = True
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    # "https://pet-store-fawn.vercel.app",
+    "https://pet-store-fawn.vercel.app",
 ]
 
 
