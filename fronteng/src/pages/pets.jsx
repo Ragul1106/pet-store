@@ -108,9 +108,9 @@ export default function Pets({ petType: propPetType = "dog" }) {
     setErr(null);
     try {
       const [cRes, pRes, bRes] = await Promise.all([
-        axios.get(j("/api/pet-categories/"), { params: { pet_type: resolvedPetType } }),
-        axios.get(j("/api/pet-products/"), { params: productRequestParams }),
-        axios.get(j("/api/pet-banners/"), { params: { pet_type: resolvedPetType } }),
+        axios.get(j("/pet-categories/"), { params: { pet_type: resolvedPetType } }),
+        axios.get(j("/pet-products/"), { params: productRequestParams }),
+        axios.get(j("/pet-banners/"), { params: { pet_type: resolvedPetType } }),
       ]);
 
       setCategories(Array.isArray(cRes.data) ? cRes.data : (cRes.data?.results ?? []));
